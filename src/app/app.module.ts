@@ -6,9 +6,13 @@ import { AppComponent } from './app.component';
 import { CardsModule } from './cards/cards.module';
 
 @NgModule({
+  // Declarando os componentes que fazem parte do módulo
   declarations: [
     AppComponent
   ],
+
+  // importando o CommonModule para que as diretivas do Angular possam ser utilizadas
+  // importando módulos para que os componentes possam serem utilizados
   imports: [
     BrowserModule,
     AppRoutingModule,
