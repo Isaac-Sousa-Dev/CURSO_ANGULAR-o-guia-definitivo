@@ -1,4 +1,11 @@
 import { Component } from '@angular/core';
+interface IPlano {
+  infos: IInfo
+}
+interface IInfo {
+  tipo: string,
+  preco: number
+}
 
 @Component({
   selector: 'app-card',
@@ -7,7 +14,7 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
 
-  plano = {
+  plano: IPlano = {
     infos: {
       tipo: 'Simples',
       preco: 1000
