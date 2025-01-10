@@ -19,6 +19,10 @@
     }
 }
 
+.global {
+    background-color: yellow;
+}
+
 // Atualização do componente pai para o filho se afetar estilização de outros componentes
 // Usando ::ng-deep | :host -> para estilizr somente no componente atual
 :host ::ng-deep .card-cancel-button {
