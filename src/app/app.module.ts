@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardsModule } from './cards/cards.module';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
 @NgModule({
   // Declarando os componentes que fazem parte do módulo
   declarations: [
@@ -16,9 +19,12 @@ import { CardsModule } from './cards/cards.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CardsModule
+    CardsModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

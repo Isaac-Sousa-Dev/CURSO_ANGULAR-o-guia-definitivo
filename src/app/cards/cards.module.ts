@@ -5,6 +5,8 @@ import { CardRoxoComponent } from '../card-roxo/card-roxo.component';
 import { CardButtonComponent } from '../card-button/card-button.component';
 import { CardRoxoButtonComponent } from '../card-roxo-button/card-roxo-button.component';
 import { CardButtonCancelComponent } from '../card-button-cancel/card-button-cancel.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatSliderModule} from '@angular/material/slider';
 
 @NgModule({
   // Declarando os componentes que fazem parte do módulo
@@ -17,7 +19,9 @@ import { CardButtonCancelComponent } from '../card-button-cancel/card-button-can
   ],
   // importando o CommonModule para que as diretivas do Angular possam ser utilizadas
   imports: [
-    CommonModule
+    CommonModule,
+    MatSlideToggleModule,
+    MatSliderModule
   ],
   // Exportando os componentes para serem utilizados em outros módulos
   exports: [
