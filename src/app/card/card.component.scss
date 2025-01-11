@@ -19,9 +19,6 @@
     }
 }
 
-.emulated {
-    background-color: red;
-}
 
 // Atualização do componente pai para o filho se afetar estilização de outros componentes
 // Usando ::ng-deep | :host -> para estilizr somente no componente atual
