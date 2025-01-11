@@ -11,7 +11,8 @@ interface IInfo {
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
-  encapsulation: ViewEncapsulation.None // Basicamente, remove o encapsulamento desse componente
+  encapsulation: ViewEncapsulation.Emulated
+  // encapsulation: ViewEncapsulation.None // Basicamente, remove o encapsulamento desse componente
 })
 export class CardComponent {
 

@@ -20,6 +20,10 @@
 
 }
 
+.emulated {
+    background-color: red;
+}
+
 :host ::ng-deep .mdc-slider__track--active_fill {
     border-color: rgb(34, 255, 0) !important;
 }
