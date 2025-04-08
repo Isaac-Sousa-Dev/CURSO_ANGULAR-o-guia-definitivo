@@ -1,3 +1,15 @@
 <main class="container">
-    <input id="meu-input" [type]="inputType" [value]="inputText">
+    <div class="main">
+        <input id="meu-input" [type]="inputType" [value]="inputText" [disabled]="isDisabled">
+        <br>
+        <button (click)="enableInput()">Habilitar</button>
+        <button (click)="disabledInput()">Desabilitar</button>
+
+        <br>
+        <button (click)="setPasswordTypeInput()">Password</button>
+        <button (click)="setTextTypeInput()">Text</button>
+
+        <br>
+        <button (click)="logInputText()">Log</button>
+    </div>
 </main>
